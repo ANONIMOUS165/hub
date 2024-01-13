@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-left: 30px;
+        }
+        h3 {
+            margin-left: 30px;
+            margin-right: 500px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            background-color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 5px solid #000000;
+            padding: 5px;
+            margin-left: 30px;
+        }
+        img {
+            margin-right: 30px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .expoVoltaire {
+            width: 100%;
+            height: 300px;
+            background-color: orange;
+        }
+        .pubgamplex {
+            width: 100%;
+            height: 300px;
+            background-color: blue;
+        }
+        .expoNapoleon {
+            width: 100%;
+            height: 300px;
+            background-color: brown;
+        }
+    </style>
+    <div class="expoVoltaire">
+        <br>
+        <img align="right" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFhYYGBgaGBoYGhgZGBgaGhoaGhgaGhoYGhgcIS4lHCErHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjQrJSQxNDQ0NDQ0NDQ0NDQxNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDE0NDE0NDQ0NDQ0NDQ0NDQ0Mf/AABEIAPkAywMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAADAAECBAUGB//EADcQAAEDAgQDBgUEAgEFAAAAAAEAAhEDIQQSMUEFUWEicYGRofAGMrHB0RNC4fFikoIUFSMzUv/EABoBAAMBAQEBAAAAAAAAAAAAAAACAwQBBQb/xAAlEQACAgICAgMAAgMAAAAAAAAAAQIRAyESMQRBIjJRE2FxocH/2gAMAwEAAhEDEQA/APKpUXJJiuiCSlMUkAOCnlRA39+7JguAElNKjKSAJSnlQTygCUpwVFOEAOSmlKUkAIFKUkggYcuTSkkgBwU+ZRSQCRLMnlRCdcGJtcp50KVJqALNAT+PL8K5dV8My9lpjDnn6BRnLZ1I5hIlMSmWgkJJMkuAJJMkgB05KinQBJoJsE4CYK1Qo6GEWdoFToOcYAVn/tr+V+S3sHhZcCOz2RMj3yXRcNwzyOxSDv8AMiFmyeQoFI43J0jz88PfGnhoVVfTIXpOO4BUccxaAd72WDj+AOYCXiZ1I2XIeXCXseWCaXRySSt4nCZbzabqotKae0Rr0OkmSXQodIJQkFw6JOmClCDq2II1NklQYyStbAYT+SllKjvRYwGGtK2Gkch5Kk0AAgK0xthYqNX2QlkbODKZOVFaRh0ySdAwySSSAEnaEydqALVCkScu/VbuGw0vDcsg+hWPhmPsZ2geZt6roOFuOcT0upZJa0dijpeFcKY+o1hFgMxEehK9Ao0WtaAALLz74cxk4k31B9CF6HTdZeB5blzp/h6eKKUE17AYmnIWJxDDBwII2W9WNlmV3Ss0ZbNcNxPKeOYcMe5pHZJ0+4XOPaAeYXefGODNngbriKonwt5L6PxZ8oJnk+RHjMApFp9++iaEgFqI0JO0JgnAXDlDhFpskqDAtTA4TMllKjtUSweFkiAtptENEBSw9EMFgi1BCknbtkMk70ugdGnMo8jl6KNOdEXJ7lMkRPOEk6ZWNQ5TJJIAZJOAni09UCjIlIIaNQQMbFBwDWtOwmyvUabSQSSJ5E6crc1Vp4VmUnNbRHbStm7UbaDTkoSodGz8MA/9Q537WAj1H4XVY34hrTloUs3+R08FynwhL3vB0hdPiuF135QxzWMF3Tcu6ZeXf42XkeQo/wAvy/30eriV40ZmJ4pjc3arU2/4BrXGOROy134l7MOarxo3Nbff8LHw3Bq0Fr3/AKlQvkFk5WtgDJlJDQLeErscRgQ+i6i4CCwtttIixUcrgmkqr+iqTir2r9M8f4nxGvXlxcWsJsADCxgw5iCesro6/DmsLg7O6pTzMyEgsgjKHBpFpbB/lc/Vp5XkaGB/S9zC41UTzM8JL5SB02X8U0IgQ3aq1kV0RhSa1SYyVdweELiO9cckgHwGELnDeV02Hw4YIi8IuBwIYNL/AERntUb5O2Z8k70gISq3Ri20ILwu2SEwIs9UOmrOUIWwZ5k5RUiPz9lGVoLiSCZJAxJroMpgmTh1o21j7oASmxpUUViALWGrEAiVfOMGTLBcSdOULOGHeIO50G6sGgWXLhPK/wBUjSbGRv8AwbiBTrwZGYe5XpjccALLyDhDpqNM7r0jCDY3BXj+bFfyW/Z7XhtOFS9GzhsRJ6Kti+OUWOyvqNa4mIJg9FlYni7abwwg94Fh38gh8Y4jTewjMwOLY2J8SFkWL5W1pmjjbfFWY3xbiKba2ZrhnkBwO4iQSOn3XE4ipne5x97/AHKPXb/5HnNmGYwdbd/cqzGB7iRb+17uDEoRW70eR5WWUnTVbEx0nRT/AEeSPh8IZtqtnB8IcdbBNLIomb1sy8Lgy4wBK6XAYMMvEn6I9HDhghojqi0R0UuTl2QyZfSJNKYuCmR0UXCwhdM6AuCi5pRXs+ygdl1MYGxkI0KDtu9GXUztHlySRTrSaCKSRSQAkkkggBwjNfCCERjOaBS5h3mcxMbSrDqef5NB+51gqBedNByU2VnCwmOSRr2UTL+EaWGbOvMheg8C4g17AJvC4PhbzmBy25c/BdxT4Cx0PpvNN+sDT/Urz/LjGT+XZu8fK49G7TsSY1ss7jGBLgcjQDrIAHnssjFY/E4cw5mdo/cBb+PVDxPxWMm2blP2KxLBNNOOzbDyYq9tHM8WpPZmza6bekKzwPhZe2YVbiWLOIe0RsDZdlwXDxTA3Oq9RSlGCT7Z5PlZLk5J2AZgWM0F0cCyI8XKiRyUvZhc3Lsg7RNTCcuUqQunixGSLY81BxgKw9llWeE17ORQ2qE4I1PQodRtuq7ZRRIN1VrMqTReUb3ouWynFHl6QKQKZbBxJBPCZACSSSQARhRGHzlBajNEFAo7gSrjcOAALTGnJOymAQfxPdCd7wR2BefGUjZRIPw7GfpPBe2Wjb7hej8E4vQqABrxm/8Al1j/ACvMa2DeHDO0tEfNEjqTG11ZdhshEGQRMX7Ji9+ehMaX5FZc2KE93s0Y24+j1THUxtbuMfRcXxXB3JiTzcRH0Cr4bjdfDuax5ztIMZzBIEizjvIi83halPidCvALnMcNngR3SskYTxu+1+orKpa9mFhMEXVJAlogToLASu3osyANjQKtQptbBaQ5ok66knUnUlXc893u6d5OUkZM8Hx0U6rbz4oKsYhwEKu4jXn1TmNIg7dNTfdNnATsrDkuLsetdE6lU6KuK1tJuimuJMqvVeqIZL+h/wBUqJqochQe26dDUFc8efRLMeZQnHSUUBDGPNymATppWw4OEyScoAZJJJABGFHptJcIEqvTXWfDGBBGciSdEmSajG2EI8nRmMwrjtcxZbPCuEOmS22sn8LcZhWMMuguOjWiT5KwapAkscB1LR6ErDkzt6RqhiS2wDmNe0se3wPJYuMYWQzVmkG3MxI7Q30ImT47bqzHnsmHbC3oRqqXEmtfTe4CHNgkciDqOhCnjfyKy6M3F1w+m1rvmZJBIB+azpcBoYbtyBFr5FWiQQW3sJvab7nuPiCrVftNDhyWWKhmZgjcdk+i2QjS0Rc/0u4Tib6R7LoI/adOq6vAcbFQBr+y+NOfguJc7Ndw8rHvuiYZ+RzHDtAOBg7wZII2nl1SzwqW+mdUvR3VavIHegmvKxeAYl7w5rnF2WCCTe9oK0n2UOPGVMhKCQR71HOhk/ROH2TVsWiOc+qcn34oRckCSPROkDCvdZLqq5cYUqZsE0UcYV14RJ9+wgG5RkPsDzopinTLWA6SSSAEnhJJAFrh2FdVeGDfU8gu9wjcrclPstb2S87xqGjdcz8NMAa52kuyzyEXI66rraDwACRAAGVvIbT1WHyJNuvw04YpKy5RhgOXU6uNye8qviHB3zQe9Ea8umBrz7kCq+DBhZki1mbjKgAsIjSFWoYovmTcDKf8mG1+oP1RMe6AVkYOsP1BPcfGy0QgmrJyk0yNKple5h0kqlimZXHqjcRPbnuSxLs7AdwtUV0/0i/wrtMpNEyN9tBPPvKE1ym5+h6p2jiZb4dinMf10jnsR4yFusxgqdoTyI6rmXuFnCdd/T7rU4SRlcJvMqGSC+w72jWNSAhF6G9MNFJIQmXTuiMcYQGozDCZCsi6U7XJOfOykxqYUdsyEfMVGnTkjqWieriAJ5XKjSrggGErkOsbas4Mpk7ky2CDpkkkAOkmR8KzM8A6IA3eAUCGyZMmWt59SumpUCLvI7gs7AOMWho5gX7pVu7rbLzsrcpWbIJJBa2L2bZVnUzEkqy2m1u0nqqOPqDRcjH0jrkUeI4kBsarB/Vi41/lFx9eTCpSt2OHGJmlLZexL8x8AlRdZAD7ItJNWgAOEFTOii83TB66ASje3cJ75j1RsPXLJc2JjQ73H5JVRrr298tETESIvqJkbHceBkJZK9AnSOgpPzMDo1H9/ROAqPDMeCMjzpcHpyWnQZn+WD4j15LNJOL2GmQaxTY1Hfh8vzObpJibd5IEKhiOLUachvbdyHyjvdv4Lid/VWMsbat6X6y/RoucbKxw9jH1HMLjbSNXc45LlKvG6jjcwBoGiI28bfVW+H43I9lQftN+7QjyRPHOm2aYLA48Ypt/r/4dXx17abKbWCA4k/6PYZ66eqxcEOw3uV74tFsO4XBa+/OchHos2myAO4fRJiXx2EtRSRx5TJymK9AwCSSSQAgtHheHLnTsqNJkmF0/DaQECEmSXGI0I2zWpU+yBsjsMKE23QK9Y6BefVmuyWJxICysS/MEd9Im7jAWPj+IXLWCBpO6vjjfRKUqWzPrm571BoTOKk1bDPdsmERroQgVIrg6IuKaUkl0VsRKI95dE3IFvx6FDU2CbeX117481xjJlrCYRz3tLYAFySQIFwSJudDYSr9TiLKQLWHO7nssUns6mDtNrdPH1Rm8Oe4ZmjMLabTz/KlKKf2eisW19Vb/AHsjjMa957Trchp5Kqr+M4U+mJMERJg6SqICeLi18eieSOS/nd/2IBFoVC09N1fwXBalRmduUtmAMwkxqrdLh5blBYQ6Zc47DkNkssseuymPG/tdUXcPiHPoNpPaSGvDqbjaBBzMvtMEePRPCm50plGvwJ5WzjCmTlMtZnEkkpU2SUAXeHU7yunwlLRZnDMPFythhWXNL0i+OIcUybJnFjBzKq4jGwFl18VKjDG5DykkPxbH2IEeC58lFxROYoC2xioqkZpScnskAiNCG0qYKcVEgnlRTwgpYxKSRCSBBJ2lMUyATJZJMW8V0fC8WGNa5tyBdvMd2+/mubefZ2vb0hNRrFpspZMfNUy+LL/G7OibxNjs7XNyg/K2ZAHQ/ZZlbDtNxqqzsQTsFo0GTTDtxr4+/VKoKG0Vn5HNU9l/hdbKwN3uT0lXa1UloBO5Nu4fhZbGbjRWgQpOK5WQ5OiQARfBQUnFO2TOKITJymWk4JafDsKTfmqFFkldVgGNaNhAknkOanklSHgrZZw1CBojVGWk9kc1nYnjIa2aUHbNBHkD5abeKqVq5cwvNSHCAWkklxhzpA0DbNbEalZ1CT29Fm0uiWPxTW2bc9Vmux7uQhD/AFiS1zhmykEgzBGbNlPSSf8AZCqVCSSYvyEegWmEUlRGUrI1amYzEIak/RRTiEmqcIYRAUAOkkkgBJ3GTKZJACTJyooOMchQeINiD1Ex6qTuiGeS4DDNC18PUaGDNAtF978t1kh0C2s6pnOLjckpZR5DR0dFh3CLaD3KI1VuHsIZ2t1aZEqD7GYZjEV1IqNMo/6iGhdnBFJoSKkxahWHpG4CuY/FQxrGnX5vwqAdF1Em6442zsXSo0sNXccuZjXNYMp7LRDXfLmcBaDJBN9dpSxlBxceyG/4hwdA7xNkg1jWSLkxIIkgwCDmgAEdpuUC0m5tFZ7/AOlOt2i10qYMtMRmgC4HOeXkPRDexSc9RfJVESlQMqKkQmK6cHRAEJEYUAOnlJIhAUJJMmlByyRTFRJSlBwR1UCLpypUWFzgBcmwQdYRoVnAUi52lgukdw6mGgFskADU7ACfqmZQY0Q1sKDzJrRSMQbj0SYUR7eiQplSspxFmR8/QoTGfVWchRYrSOCIUmhX6VNjWkuEkjskzHQxp4GUHEOGVoAg3J8TYeAE/wDIrUpWSppbK5SaLp0Si1McW2EJ/pQIlScbqJSooxnAKDinKiQmEbBlIhTIUYQKMArmCoB5u4DwnZVcqPg2y8CYXJdDRey1VwB1aQ7pBB/ColbdB2oOo9hQq0A8ZTEj93JTUq7KOKZjymLVOowtJadvcqMKpJkCEymQoFBwRC2fhrC5nl8fKLd5/hYwC7Lg9LJSaIue0fFRzS4x/wAlIR5SLzhtshPp9EZ7wkYhY1JmjiiuWQnPcjyIUX5V3kDQK8ozQVXcQTCtNcOvkmTRNpo4VlS2U6bIpwuUEvI0kNa4OLjIEdk9kXmTy5quVYPy+S2y0ThtbAFm+0+xKKwQFByM7QdwXWLEGQmhTCcoHBFqgQrL9EEoQrBkJg1TcnCBCBC0OE4eXZjoFSK2eDfI5Lk+o8PsBaIqEDdWXkiyrD5z72VulqO8KUvQ5k8QYZDjuPoqrO6Vucf0b72WVh/m8/oqx+ojWwDncgmLUV+qYpjgKF22GbnYxw0LQfRcaV2fB/8A0M7j9So5+kdx9hRTvt76Igp22RtlJuvgFBRVlGys5sShknkrtXRDf8o8Pqm4I5yZTLTO6nI9lFd9kWloFxxQcmf/2Q==">
+        <h1>Exposée sur Voltaire</h1>
+        <h3>Ceci est l'un de mes exposée. Celui ci est en histoire geographie parlant de Voltaire; j'ai eux la note de 20/20 et je l'ai fait quand j'étais en 4eme. Ceci a été mon premier site internet pour un exposer. Fait avec l'aide de Maxence Laroy</h3>
+        <a href="https://anonimous165.github.io/expoHistoireGeo/text"><button>Y aller</button></a>
+    </div>
+    <div class="pubgamplex">
+        <br>
+        <img align="right" style="height: 80%;" src="https://i.pinimg.com/originals/ec/b3/9d/ecb39d0bcac4e6e656e44bd05fb064cf.jpg">
+        <h1>Pub Gamplex</h1>
+        <h3>Le site pour en savoir plus sur le serveur discord Gamplex avec son lien pour le rejoindre, recrutement... Sur se serveur destiner au jeu video vous pourrez rejoindre vos amis et rencontrez d'autres personnes !</h3>
+        <a href=""><button>A venir...</button></a>
+    </div>
+    <div class="expoNapoleon">
+        <br>
+        <img align="right" style="height: 85%;" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project_2.jpg">
+        <h1>Exposée sur Napoleon Bonaparte</h1>
+        <h3>Ici vous retrouverai un autre exposée fait en histoire geographie parlant de Napoleon Bonaparte le but était de créer un journal intime sur une personne connu de la révolution Francaise.</h3>
+        <a href="https://anonimous165.github.io/expoNapoleon/1.html"><button>Y aller</button></a>
+    </div>
+</body>
+</html>
