@@ -42,21 +42,16 @@
             height: auto;
         }
 
-        @media only screen and (max-width: 600px) {
-            h1, h3, button, img {
-                margin: 5px;
-            }
-
-            h3 {
-                margin-right: 5%;
-            }
-
-            .expoVoltaire, .pubgamplex, .expoNapoleon, .leconscolaire {
-                height: auto;
-            }
-            img {
+        @media only screen and (min-width: 600px) {
+            /* Styles pour les écrans de 600 pixels et plus (PC) */
+            .expoVoltaire,
+            .pubgamplex,
+            .expoNapoleon,
+            .leconscolaire img {
+                display: block; /* Afficher les images pour les écrans plus larges */
                 max-width: 100%;
                 height: auto;
+                margin: 0 auto;
             }
         }
     </style>
