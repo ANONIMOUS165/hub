@@ -42,11 +42,21 @@
             height: auto;
         }
 
+        @media only screen and (max-width: 600px) {
+            /* Styles pour les écrans de moins de 600 pixels (téléphones) */
+            .expoVoltaire img,
+            .pubgamplex img,
+            .expoNapoleon img,
+            .leconscolaire img {
+                display: none; /* Cacher les images pour les écrans plus petits */
+            }
+        }
+
         @media only screen and (min-width: 600px) {
             /* Styles pour les écrans de 600 pixels et plus (PC) */
-            .expoVoltaire,
-            .pubgamplex,
-            .expoNapoleon,
+            .expoVoltaire img,
+            .pubgamplex img,
+            .expoNapoleon img,
             .leconscolaire img {
                 display: block; /* Afficher les images pour les écrans plus larges */
                 max-width: 100%;
